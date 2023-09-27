@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Navbar</title>
+<style>
+    /* CSS for the Logout button */
+
+    .logout-btn {
+        color: #ffffff; /* Text color */
+        text-decoration: none; /* Remove underlines */
+        padding: 0; /* Remove default button padding */
+        transition: color 0.3s ease; /* Smooth color transition on hover */
+    }
+
+    .logout-btn:hover {
+        color: #ff0000; /* Change text color on hover */
+    }
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">Library Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adminclick">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="studentclick">Student</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mg-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</body>
+
+</html>
